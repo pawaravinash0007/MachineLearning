@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model from the .sav file
-model = pickle.load(open('model.sav', 'rb'))
+model = pickle.load(open('avinash_model.sav', 'rb'))
 
 # Streamlit app UI
 st.title('Model Deployment with Streamlit')
