@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickel
+import pickle
 
 
 def predict(data):
-    clf = pickel.load("avinash_model.sav")
+    clf = pickle.load("avinash_model.sav")
     return clf.predict(data)
 
 st.title('Develope By- Exeternal Guide : Avinash Pawar and WBL Student Team')
