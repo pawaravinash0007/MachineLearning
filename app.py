@@ -12,9 +12,7 @@ def predict(data):
     
 st.title('Classifying Iris Flowers- Developed at NIELIT Daman Smart Lab')
 st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Student Team')
-st.markdown("To classify iris flowers into \
-     (setosa, versicolor, virginica) based on their sepal/petal \
-    and length/width.')
+st.markdown("To classify iris flowers into \ (setosa, versicolor, virginica) based on their sepal/petal \ and length/width.")
 
 st.header("Plant Features")
 # Define the sliders for input
