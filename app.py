@@ -19,6 +19,5 @@ petal_w = float(st.slider('Petal width (cm)', 0.1, 2.5, 0.5))
 
 # Predict and display the result when the button is clicked
 if st.button("Predict type of Iris"):
-    avi=np.array([[sepal_l, sepal_w, petal_l, petal_w]])
-    result = clf.predict(avi)
+    result = clf.predict(np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
     st.text(result[0])
