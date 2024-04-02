@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 # Load the model
-clf = pickle.load(open("avinash_model.sav","rb"))
+clf = pickle.load(open("avinash_model.pkl","rb"))
 
 def predict(data):
     clf = pickle.load(open("avinash_model.pkl","rb"))
