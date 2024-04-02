@@ -4,7 +4,12 @@ import numpy as np
 import pickle
 
 # Load the model
-clf = pickle.load(open("avinash_model.sav","rb"))
+#clf = pickle.load(open("avinash_model.sav","rb"))
+
+def predict(data):
+    clf = pickle.load(open("avinash_model.sav","rb"))
+    return clf.predict(data)
+
 
 # Define the sliders for input
 sepal_l = float(st.slider('Sepal length (cm)', 1.0, 8.0, 0.5))
