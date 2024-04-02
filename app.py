@@ -9,8 +9,14 @@ clf = pickle.load(open("avinash_model.pkl","rb"))
 def predict(data):
     clf = pickle.load(open("avinash_model.pkl","rb"))
     return clf.predict(data)
+    
+st.title('Classifying Iris Flowers- Developed at NIELIT Daman Smart Lab')
+st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Student Team')
+st.markdown("To classify iris flowers into \
+     (setosa, versicolor, virginica) based on their sepal/petal \
+    and length/width.')
 
-
+st.header("Plant Features")
 # Define the sliders for input
 sepal_l = float(st.slider('Sepal length (cm)', 1.0, 8.0, 0.5))
 sepal_w = float(st.slider('Sepal width (cm)', 2.0, 4.4, 0.5))
