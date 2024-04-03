@@ -11,7 +11,6 @@ def predict(data):
     return clf.predict(data)
     
 st.title('Classifying Iris Flowers- Developed at NIELIT Daman Smart Lab')
-st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Student Team')
 st.markdown("To classify iris flowers ")
 
 st.header("Plant Features")
@@ -25,3 +24,5 @@ petal_w = float(st.slider('Petal width (cm)', 0.1, 2.5, 0.5))
 if st.button("Predict type of Iris"):
     result = clf.predict(np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
     st.text(result[0])
+
+st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Student Team')
