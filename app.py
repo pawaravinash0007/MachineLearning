@@ -10,8 +10,8 @@ def predict(data):
     clf = pickle.load(open("avinash_model.pkl","rb"))
     return clf.predict(data)
     
-st.title('Classifying Iris Flowers- Developed at NIELIT Daman Smart Lab')
-st.markdown("To classify iris flowers ")
+st.title('Classifying Iris Flowers')
+st.markdown("This model is design at NIELIT Daman Smart Lab ")
 
 st.header("Plant Features")
 # Define the sliders for input
@@ -25,4 +25,4 @@ if st.button("Predict type of Iris"):
     result = clf.predict(np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
     st.text(result[0])
 
-st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Student Team')
+st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Intern Team')
