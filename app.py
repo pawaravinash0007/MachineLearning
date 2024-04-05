@@ -25,4 +25,4 @@ if st.button("Predict type of Iris"):
     result = clf.predict(np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
     st.text(result[0])
 
-st.markdown('Develope By- Exeternal Guide : Avinash Pawar and WBL Intern Team')
+st.markdown('Developed By- Exeternal Guide : Avinash Pawar and WBL Intern Team')
